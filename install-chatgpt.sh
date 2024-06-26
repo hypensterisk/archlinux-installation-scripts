@@ -40,8 +40,7 @@ mount ${DISK}1 /mnt/boot/efi
 swapon ${DISK}2
 
 # Select the mirrors
-reflector --country United States --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
-
+reflector --country "Indonesia" --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 # Install essential packages
 pacstrap /mnt base linux linux-firmware gnome
 
